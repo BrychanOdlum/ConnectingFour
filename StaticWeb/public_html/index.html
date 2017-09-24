@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<title>Connect4</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="robots" content="index" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="assets/style/core.css">
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,600italic,700italic,800,800italic' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+	</head>
+	
+	<body>
+		
+		<header>
+			
+			<div class="title">
+				<span>Connect 4</span>
+			</div>
+			
+		</header>
+		
+		<!--
+		<div id="overlay">
+			<div id="overlay_body">
+				<div id="overlay_main">
+					abc
+				</div>
+				<div id="overlay_tf"></div>
+				<div id="overlay_tl"></div>
+			</div>
+		</div>
+		-->
+		
+		
+		<section class="screen">
+			
+			<div id="preMenu">
+				<h1>Connect 4</h1>
+				<button onclick="create()">Create Game</button>
+				<hr>
+				or
+				<div id="join">
+					<form method="get" id="joinForm">
+						<input id="joinText" type="text" placeholder="http://lorem.ipsum/join/hjKDIfE3" />
+						<input value="Join Game" type="submit" >
+					</form>
+				</div>
+			</div>
+			
+			<div id="preWait">
+				<h1>Connect 4</h1>
+				<h2>Waiting for player<span id="waitLoader">...</span></h2>
+				<hr>
+				Share the link to play:
+				<input id="gameLink" type="text" value="http://lorem.ipsum/join/hjKDIfE3" readonly />
+				<span id="gameLinkTip">(tap to copy)</span>
+				</div>
+			</div>
+			
+			<div id="board">
+				
+				
+				
+			</div>
+			
+		</section>
+		
+		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="/assets/core.js"></script>
+		<script src="/assets/tiptip.js"></script>
+		
+	</body>
+	
+	
+	
+</html>
+

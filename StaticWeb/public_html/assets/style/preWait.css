@@ -1,0 +1,41 @@
+div#preWait {
+	position: absolute;
+	display: none;
+	margin: auto;
+	left: 50%;
+	margin-left: -125px;
+	width: 275px;
+	height: 500px;
+	top: 50px;
+	text-align: center;
+}
+
+div#preWait h2 {
+	font-size: 12px;
+}
+
+div#preWait #waitLoader {
+	display: inline-block;
+	text-align: left;
+	width: 6px;
+}
+
+div#preWait #gameLink {
+	-webkit-appearance: none;
+	border: none;
+	height: 35px;
+	width: 100%;
+	display: block;
+	margin-top: 15px;
+	text-align: center;
+}
+
+div#preWait #gameLinkTip {
+	font-size:12px;
+}
+
+div#preWait > hr {
+	display: block;
+	border: none;
+	height: 20px;
+}

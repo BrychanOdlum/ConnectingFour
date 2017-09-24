@@ -1,0 +1,54 @@
+div#board {
+	display: none;
+	margin: auto auto;
+	margin-top: 50px;
+	
+	width: 700px;
+	height: 600px;
+}
+
+div#board .col {
+	width:14.285%;
+	width:calc(100%/7);
+	height:100%;
+	float:left;
+}
+
+div#board .col > .cell {
+	width:100%;
+	
+	height:16.666%;
+	height:calc(100%/6);
+	
+	float:left;
+	display:inline-block;
+	position:relative;
+}
+
+div#board .col .cell > div {
+	border-radius:50%;
+	
+	position:absolute;
+	top:5px;
+	bottom:5px;
+	left:5px;
+	right:5px;
+	
+	box-shadow: inset 0px -1px 3px 0px rgba(0,0,0,0.05);
+}
+
+div#board .col .cell.empty > div {
+	background: rgba(0,0,0,0.05);
+}
+
+div#board .col .cell.guest > div {
+	background: #268888;
+}
+
+div#board .col .cell.host > div {
+	background: #e23f3f;
+}
+
+div#board .col:hover .cell.empty  > div {
+	background: rgba(0,0,0,0.15);
+}
